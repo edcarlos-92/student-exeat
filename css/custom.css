@@ -1,0 +1,48 @@
+/* CSS used here will be applied after bootstrap.css */
+.artist-collection-photo {
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.artist-collection-photo div {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+button:hover {
+  color: #ccc;
+}
+
+table.dataTable.no-footer {
+  border-bottom: 0px solid #111 !important;
+}
+
+table.dataTable thead th {
+  border-bottom: 0px solid #111 !important;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+  table.table.table-bordered.dataTable.no-footer.DTFC_Cloned {
+    display: none !important;
+  }
+
+}
+
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  @page {
+    size: auto;
+    margin: 0;
+  }
+}
